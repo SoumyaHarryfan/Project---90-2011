@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> Quiz game page </title>
+        <link rel="stylesheet" href="quiz_game_page.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <h4 id="player1_name"></h4><span id="player1_score"></span>
+        <br>
+        <h4 id="player2_name"></h4><span id="player2_score"></span>
+        <script src="quiz_game_page.js"></script>
+        <div class="container">
+        <center>
+            <h2 style="color: hotpink;">Math Quiz Game </h2>
+            <h3 id="questionerturn"> Question Turn - </h3><span id="questionerturndisplay"></span>
+            <h3 id="answererturn"> Answer Turn - </h3><span id="answererturndisplay"></span>
+            <div id="output" style="border-left:deeppink;">
+                <h5 id="questiondisplay"></h5>
+                <h6> Answer : </h6>
+                <input type="number" id="inputofnumber">
+                <button class="btn btn-primary" id="button1ofcheck" onclick="check()"> Check </button>
+            </div>
+            <h5> Number 1 </h5>
+            <input type="number" id="number1" placeholder=" Number 1 ">
+            <h5> Number 2 </h5>
+            <input type="number" id="number2" placeholder=" Number 2 ">
+            <button type="button" id="sendbutton" onclick="send()" class="btn btn-success"> Send </button>
+        </center>
+        </div>
+    </body>
+</html>
